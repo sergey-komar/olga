@@ -18,6 +18,15 @@
 }
 .footer-block__list li{
     margin-bottom: 2.5rem;
+    transition: all .3s ease-in;
+}
+.footer-block__list li a{
+    padding-bottom: .3rem;
+    transition: all .4s ease-in;
+}
+.footer-block__list li a:hover{
+    transition: all .4s ease-in;
+    border-bottom: 1px solid #fff;
 }
 .footer-block__list li a,
 .footer-block__item-phone,
@@ -33,6 +42,9 @@
     display: block;
     position: relative;
     margin: 0 0px 15px 40px;
+}
+.footer-block__item-email{
+    text-decoration: underline;
 }
 .footer-block__item-phone::before,
 .footer-block__item-text::before,

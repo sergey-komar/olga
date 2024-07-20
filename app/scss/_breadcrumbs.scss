@@ -1,0 +1,44 @@
+.breadcrums {
+    padding: 4rem 0;
+    background: #f2f4f5;
+}
+.breadcrums__list {
+    display: flex;
+    gap: 30px;
+    color: #cdcdcd;
+}
+.breadcrums__list li{
+    position: relative;
+    margin-left: 10px;
+    transition: all .3s ease-in;
+}
+.breadcrums__list li::before{
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #cdcdcd;
+    left: -10px;
+    top: 9px;
+}
+.breadcrums__list li:last-child::before{
+    background-color: #e50023;
+}
+.breadcrums__list li a{
+    font-size: 14px;
+    color: #cdcdcd;
+    transition: all .3s ease-in;
+}
+.breadcrums__list li:last-child a{
+    color: #e50023;
+    transition: all .3s ease-in;
+}
+.breadcrums__list li a:hover{
+    color: #e50023;
+    transition: all .3s ease-in;
+}
+.breadcrums__list li:hover::before{
+    background-color: #e50023;
+    transition: all .3s ease-in;
+}

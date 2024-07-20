@@ -6,6 +6,16 @@ $(function () {
         dots: true
      });
 
+     $('.product-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1
+     });
+
+     $('.slider-stock__inner').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1
+     });
+
 
      $('.qty-btn').on('click', function (e) {
         e.preventDefault();
@@ -23,4 +33,15 @@ $(function () {
         }
         $button.parent().find('input').val(newVal);
 });
+})
+
+
+
+window.addEventListener('DOMContentLoaded',() => {
+        const mobile = document.querySelector(".header-box__icon");
+      
+        mobile.addEventListener("click", function () {
+          this.classList.toggle("header-box__icon--active");
+        
+        });
 })
