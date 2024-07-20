@@ -1,0 +1,110 @@
+@media(max-width: 1500px){
+    .slider-home .slick-dots{
+        left: 1%;
+    }
+}
+
+@media(max-width: 1300px){
+    .feedback-box__input{
+        max-width: 32rem;
+    }
+    html{
+        font-size: 9px;
+    }
+}
+
+
+@media(max-width: 968px){
+    .brands-box__item{
+        width: calc(100% / 2);
+    }
+    .feedback-box{
+        flex-wrap: wrap;
+    }
+    .feedback-box__input{
+        margin-bottom: 1rem;
+        max-width: 62rem;
+    }
+    .brands,
+    .feedback{
+        padding: 5rem 0 5rem 0;
+    }
+    .slider-home__bg,
+    .slider-home__wrapper{
+        min-height: 60rem;
+    }
+    .slider-home .slick-dots{
+        transform: translateY(-4rem);
+        left: 2%;
+    }
+}
+@media(max-width: 640px){
+    .slider-home__title{
+        max-width: 100%;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .slider-home__btn{
+        max-width: 290px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .slider-home__btn::after{
+        top: 9px;
+        right: 90px;
+    }
+    .brands{
+        display: none;
+    }
+    .feedback-box__input,
+    .feedback-box__btn,
+    .feedback-box__checkbox-text{
+        max-width: 100%;
+    }
+
+
+    .feedback-box__checkbox{
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 576px){
+    .slider-home__bg,
+    .slider-home__wrapper{
+        min-height: 45rem;
+    }
+    .slider-home__wrapper{
+        padding-top: 5rem;
+        justify-content: flex-start;
+    }
+    .slider-home__title,
+    .title{
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .feedback__title,
+    .feedback-box__input{
+        margin-bottom: 20px;
+    }
+    .feedback-box__btn{
+        margin-bottom: 15px;
+    }
+    .brands{
+        margin-top: -2rem;
+    }
+    .slider-home__btn{
+        width: 190px;
+        font-size: 14px;
+    }
+    .slider-home__btn::after{
+        right: 55px;
+    }
+    .slider-home__title{
+        margin-bottom: 5rem;
+    }
+    .feedback__text,
+    .feedback-box__btn{
+        font-size: 14px;
+    }
+    
+}
