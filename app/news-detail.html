@@ -13,11 +13,48 @@
   <header class="header">
     <div class="container">
       <div class="header-box">
-        <div class="header-box__icon">
-            <div class="header-box__icon-middle"></div>
+  
+        <div class="nav-icon">
+          <div class="nav-icon__middle"></div>
         </div>
-        <a href="#" class="logo">
-          <img src="./images/home/logo.svg" alt="img">
+       
+        <div class="menu">
+          <nav class="nav">
+            <ul class="menu__list">
+              <li class="menu__list-title">Товары</li>
+              <li><a href="#">Датчики</a></li>
+              <li class="menu__list-dropdown"><a href="#">Насосное оборудование</a></li>
+              <li><a href="#">Промышленное оборудование</a></li>
+              <li><a href="#">Электродвигатели</a></li>
+              <li class="menu__list-title">Услуги</li>
+              <li><a href="#">Сервис</a></li>
+              <li><a href="#">RnD</a></li>
+              <li><a href="#">Производство</a></li>
+              <li><a href="#">Поставка</a></li>
+              <li class="menu__list-item menu__list-item--about">О компании</li>
+              <li class="menu__list-item menu__list-item--smail">Покупателю</li>
+            </ul>
+          </nav>
+          <div class="menu-vertical">
+            <img src="./images/home/menu-arrpws-left.svg" alt="img" class="menu-vertical__arrows">
+            <div class="menu-vertical__title">Все</div>
+            <ul class="menu-vertical__list">
+              <li><a href="#">Водогрейный</a></li>
+              <li><a href="#">Жаротрубный</a></li>
+              <li><a href="#">Трехходовые</a></li>
+              <li><a href="#">Водогрейный</a></li>
+              <li><a href="#">Жаротрубный</a></li>
+              <li><a href="#">Трехходовые</a></li>
+            </ul>
+          </div>
+          <div class="menu__contact">
+            <a href="tel:+79005550129" class="menu__contact-phone">+7 (900) 555-01-29</a>
+            <div class="menu__contact-address">г.Москва, 111000, ул. Тестовая, д.12</div>
+            <a href="#" class="menu__contact-email">td@eetcorp.ru </a>
+          </div>
+        </div>
+        <a href="./index.html" class="logo">
+          <img src="./images/home/logo.png" alt="img">
         </a>
         <div class="search">
           <form class="search__form">
@@ -35,6 +72,11 @@
             </a>
        
       </div>
+      <div class="search search-mobile">
+        <form class="search__form">
+          <input type="text" class="search__form-input" placeholder="Поиск">
+        </form>
+      </div>
     </div>
   </header>
 
@@ -49,7 +91,7 @@
         </div>
     </div>
 
-    <section class="news-detail">
+     <section class="news-detail">
         <div class="container">
             <a href="#" class="news-detail__link">Все новости</a>
             <img src="./images/news/news-detail-img.jpg" alt="img" class="news-detail__img">
@@ -63,7 +105,7 @@
                 </div>
             </div>
 
-            <h1 class="news-detail__title">Заголовок новости</h1>
+            <h1 class="news-detail__title title">Заголовок новости</h1>
 
             <p class="news-detail__text">
                 Безусловно, консультация с широким активом играет определяющее значение для прогресса профессионального сообщества. Но курс на социально-ориентированный национальный проект является качественно новой ступенью глубокомысленных рассуждений. Есть над чем задуматься: сторонники тоталитаризма в науке заблокированы в рамках своих собственных рациональных ограничений.
@@ -97,7 +139,7 @@
         <div class="container">
           <h3 class="feedback__title title">Полезная рассылка</h3>
           <p class="feedback__text">
-            Отправьте свою электронную почту и получите доступ к нашим последним материалам пресс-центра самыми первыми.
+            Отправьте свою электронную почту и получите доступ к нашим последним материалам пресс-центра самыми первыми.
           </p>
           <div class="feedback-box">
             <input type="text" class="feedback-box__input" placeholder="Электронная почта">

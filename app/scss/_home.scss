@@ -9,7 +9,7 @@
 }
 .goods-block__wrapper{
     position: relative;
-    width: calc(100% / 5);
+    width: calc(100% / 5 - 15px);
     height: 30rem;
     background: rgb(242, 244, 245);
     clip-path: polygon(14% 0%, 100% 0, 100% 20%, 100% 86%, 86% 100%, 20% 100%, 0 100%, 0% 14%);
@@ -82,7 +82,7 @@
 
 //PRODUCT
 .product {
-    padding: 10rem 0 10rem 0;
+    padding: 10rem 0;
 }
 .product__top {
     margin-bottom: 4.5rem;
@@ -102,6 +102,9 @@
     line-height: 52px;
     border: 1px solid #121212;
     transition: all .3s ease-in;
+}
+.product__top-link--mobile{
+    display: none;
 }
 .product__top-link::after{
     position: absolute;
@@ -306,9 +309,7 @@
 
 //BRANDNAME
 .brandname {
-    padding: 10rem 0 10rem 0;
-}
-.container {
+    padding: 10rem 0;
 }
 .brandname-block {
     display: flex;
@@ -435,7 +436,7 @@
 
 //PARTHER
 .partner {
-    padding: 10rem 0 10rem 0;
+    padding: 10rem 0;
     background: #f2f4f5;
 }
 .partner-block {
@@ -521,7 +522,7 @@
 
 //NEWS
 .home-news {
-    padding: 10rem 0 10rem 0;
+    padding: 10rem 0;
 }
 .home-news__top {
     margin-bottom: 4rem;
@@ -545,6 +546,9 @@
     line-height: 52px;
     border: 1px solid #121212;
     transition: all .3s ease-in;
+}
+.home-news__top-link--mobile{
+    display: none;
 }
 .home-news__top-link:hover{
     color: #e50023;

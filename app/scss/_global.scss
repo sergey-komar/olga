@@ -24,6 +24,10 @@ body > * {
 button{
 	cursor: pointer;
 }
+.wrapper,
+.overflow{
+	overflow: hidden;
+}
 .container{
 	max-width: 156rem;
 	margin: 0 auto;
