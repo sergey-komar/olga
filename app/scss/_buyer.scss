@@ -1,0 +1,118 @@
+.accardion {
+    padding: 5rem 10rem;
+}
+.accardion-block{
+    max-width: 130rem;
+}
+.accardion-block__title {
+    margin-bottom: 4rem;
+}
+.questions-accardion__btn {
+    position: relative;
+    padding: 2rem 0 5rem 0;
+    border-top: 1px solid #e2e0e0;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+.questions-accardion__btn::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 17px;
+    right: 0;
+    top: 20px;
+    background: url('../images/buyer/buyer-down.svg') no-repeat;
+}
+.questions-accardion__title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    transition: all .3s ease-in;
+}
+.questions-accardion__btn:hover .questions-accardion__title {
+    color: #e50023;
+    transition: all .3s ease-in;
+}
+.questions-accardion__btn.open .questions-accardion__title{
+    color: #e50023;
+    transition: all .3s ease-in;
+}
+.questions-accardion__btn:hover{
+    border-top: 1px solid #e50023;
+    transition: all .3s ease-in;
+}
+.questions-accardion__btn:hover.questions-accardion__btn::after{
+    background: url('../images/buyer/buyer-down-hover.svg') no-repeat;
+    transition: all .3s ease-in;
+}
+.questions-accardion__btn.open.questions-accardion__btn::after{
+    transform: rotate(180deg);
+    background: url('../images/buyer/buyer-down-hover.svg') no-repeat;
+    transition: all .3s ease-in;
+}
+
+.questions-accardion__content {
+    margin-top: -4rem;
+    display: none;
+}
+.questions-accardion__content-text {
+    padding-bottom: 2rem;
+}
+.buyer {
+    padding-top: 10rem;
+    background: #f2f4f5;
+}
+.buyer-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.buyer-block__info {
+    width: 35%;
+}
+.buyer-block__info-title {
+    margin-bottom: 2rem;
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+.buyer-block__info-text {
+    margin-bottom: 6rem;
+    font-size: 2.4rem;
+}
+.buyer-block__contact {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.buyer-block__item-img {
+    margin-bottom: 2rem;
+}
+.buyer-block__item-title {
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.buyer-block__item-text {
+    margin-bottom: 2rem;
+    color: #5d5d5d;
+}
+.buyer-block__item-link {
+    display: inline-block;
+    padding: 12px 16px;
+    border: 1px solid #121212;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+.buyer-block__item-link:hover{
+    color: #e50023;
+    transition: all .3s ease-in;
+    border: 1px solid #e50023;
+}
+.buyer-block__img {
+    width: 65%;
+}
+.buyer-block__img img{
+   margin: 0 auto;
+}

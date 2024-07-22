@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olga</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-box">
+  
+        <div class="nav-icon">
+          <div class="nav-icon__middle"></div>
+        </div>
+       
+        <div class="menu">
+          <nav class="nav">
+            <ul class="menu__list">
+              <li class="menu__list-title">Товары</li>
+              <li><a href="#">Датчики</a></li>
+              <li class="menu__list-dropdown"><a href="#">Насосное оборудование</a></li>
+              <li><a href="#">Промышленное оборудование</a></li>
+              <li><a href="#">Электродвигатели</a></li>
+              <li class="menu__list-title">Услуги</li>
+              <li><a href="#">Сервис</a></li>
+              <li><a href="#">RnD</a></li>
+              <li><a href="#">Производство</a></li>
+              <li><a href="#">Поставка</a></li>
+              <li class="menu__list-item menu__list-item--about">О компании</li>
+              <li class="menu__list-item menu__list-item--smail">Покупателю</li>
+            </ul>
+          </nav>
+          <div class="menu-vertical">
+            <img src="./images/home/menu-arrpws-left.svg" alt="img" class="menu-vertical__arrows">
+            <div class="menu-vertical__title">Все</div>
+            <ul class="menu-vertical__list">
+              <li><a href="#">Водогрейный</a></li>
+              <li><a href="#">Жаротрубный</a></li>
+              <li><a href="#">Трехходовые</a></li>
+              <li><a href="#">Водогрейный</a></li>
+              <li><a href="#">Жаротрубный</a></li>
+              <li><a href="#">Трехходовые</a></li>
+            </ul>
+          </div>
+          <div class="menu__contact">
+            <a href="tel:+79005550129" class="menu__contact-phone">+7 (900) 555-01-29</a>
+            <div class="menu__contact-address">г.Москва, 111000, ул. Тестовая, д.12</div>
+            <a href="#" class="menu__contact-email">td@eetcorp.ru </a>
+          </div>
+        </div>
+        <a href="./index.html" class="logo">
+          <img src="./images/home/logo.png" alt="img">
+        </a>
+        <div class="search">
+          <form class="search__form">
+            <input type="text" class="search__form-input" placeholder="Поиск">
+          </form>
+        </div>
+          <div class="header-box__language">
+            <a href="#" class="header-box__language-btn">RUS</a>
+            <a href="#" class="header-box__language-btn header-box__language-btn--active">EN</a>
+          </div>
+         
+            <a class="header-box__basket" href="#">
+              <img src="./images/home/shopping cart.svg" alt="img">
+              <span>1</span>
+            </a>
+       
+      </div>
+      <div class="search search-mobile">
+        <form class="search__form">
+          <input type="text" class="search__form-input" placeholder="Поиск">
+        </form>
+      </div>
+    </div>
+  </header>
+
+<main class="main">
+    <div class="breadcrums">
+        <div class="container">
+            <ul class="breadcrums__list">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Корзина</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <section class="cart">
+        <div class="container">
+            <div class="cart-block">
+                <div class="cart-product">
+                    <div class="cart-product__top">
+                        <a hreh="#" class="cart-product__top-link">Назад</a>
+                        <a href="#" class="cart-product__top-delete">Очистить корзину</a>
+                    </div>
+                    <div class="cart-product__title title">Корзина</div>
+                    <div class="cart-product__box">
+                        <label class="feedback-box__label">
+                            <input type="checkbox" class="feedback-box__label-input">
+                            <span class="feedback-box__label-checkbox"></span>
+                            <p class="feedback-box__checkbox-text">
+                                Выбрать все
+                            </p>
+                        </label>
+                        <a href="#" class="cart-product__box-link">Удалить выбранное (2)</a>
+                    </div>
+                    <div class="cart-product__line">
+                        <div class="cart-product__line-number">01</div>
+                    </div>
+
+                    <div class="cart-product__item">
+                        <div class="cart-product__left">
+                            <label class="feedback-box__label">
+                                <input type="checkbox" class="feedback-box__label-input">
+                                <span class="feedback-box__label-checkbox"></span>
+                            </label>
+                            <img src="./images/cart/cart-img.png" alt="img" class="cart-product__left-img">
+                        </div>
+                        <div class="cart-product__center">
+                            <div class="cart-product__info">
+                                <div class="cart-product__info-item">
+                                    <span>Артикул:</span>
+                                    <strong>А264671</strong>
+                                </div>
+                                <div class="cart-product__info-item">
+                                    <span>Наличие:</span>
+                                    <p>На складе</p>
+                                </div>
+                            </div>
+                            <div class="cart-product__center-title">
+                                Котел водогрейный Котел водогрейный  
+                            </div>
+                            <a href="#" class="cart-product__center-delete">Удалить</a>
+                        </div>
+                        <div class="cart-product__right">
+                            <div class="pro-qty">
+                                <a href="#" class="dec qty-btn">
+                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <input type="text" class="quantity" value="1"/>
+                                <a href="" class="inc qty-btn">
+                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.5 5V19" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="cart-product__right-price">23 000 р.</div>
+                        </div>
+                    </div>
+
+                    <div class="cart-product__line">
+                        <div class="cart-product__line-number">02</div>
+                    </div>
+                    <div class="cart-product__item">
+                        <div class="cart-product__left">
+                            <label class="feedback-box__label">
+                                <input type="checkbox" class="feedback-box__label-input">
+                                <span class="feedback-box__label-checkbox"></span>
+                            </label>
+                            <img src="./images/cart/cart-img.png" alt="img" class="cart-product__left-img">
+                        </div>
+                        <div class="cart-product__center">
+                            <div class="cart-product__info">
+                                <div class="cart-product__info-item">
+                                    <span>Артикул:</span>
+                                    <strong>А264671</strong>
+                                </div>
+                                <div class="cart-product__info-item">
+                                    <span>Наличие:</span>
+                                    <p>На складе</p>
+                                </div>
+                            </div>
+                            <div class="cart-product__center-title">
+                                Котел водогрейный Котел водогрейный  
+                            </div>
+                            <a href="#" class="cart-product__center-delete">Удалить</a>
+                        </div>
+                        <div class="cart-product__right">
+                            <div class="pro-qty">
+                                <a href="#" class="dec qty-btn">
+                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <input type="text" class="quantity" value="1"/>
+                                <a href="" class="inc qty-btn">
+                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.5 5V19" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="cart-product__right-price">23 000 р.</div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="cart-total__wrapper">
+                    <div class="cart-total">
+                        <div class="cart-total__title">Итого</div>
+                        <div class="cart-total__item">
+                            <span>три товара</span>
+                            <p>69 000 р.</p>
+                        </div>
+                        <div class="cart-total__item">
+                            <span>доставка</span>
+                            <p>10 000 р.</p>
+                        </div>
+                        <div class="cart-total__item">
+                            <span>скидка</span>
+                            <p>1 000 р.</p>
+                        </div>
+    
+                        <div class="cart-total__line"></div>
+                        <div class="cart-total__box">
+                            <p class="cart-total__box-text">Всего:</p>
+                            <div class="cart-total__box-price">78 000 р.</div>
+                        </div>
+                        <a href="#" class="cart-total__btn btn">Оформить заказ</a>
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div>
+    </section>
+    
+</main>
+
+    <footer class="footer">
+        <div class="container">
+        <div class="footer-block">
+            <div class="footer-block__item">
+                <a href="#" class="footer-block__item-logo">
+                <img src="./images/home/logo.svg" alt="img">
+                </a>
+            </div>
+            <div class="footer-block__item">
+            <div class="footer-block__item-title">Товары</div>
+            <ul class="footer-block__list">
+                <li><a href="#">Датчики</a></li>
+                <li><a href="#">Насосное оборудование</a></li>
+                <li><a href="#">Промышленное оборудование</a></li>
+                <li><a href="#">Электродвигатели</a></li>
+            </ul>
+            </div>
+            <div class="footer-block__item">
+            <div class="footer-block__item-title">Услуги</div>
+            <ul class="footer-block__list">
+                <li><a href="#">Сервис</a></li>
+                <li><a href="#">RnD</a></li>
+                <li><a href="#">Производство</a></li>
+                <li><a href="#">Поставка</a></li>
+            </ul>
+            </div>
+            <div class="footer-block__item">
+            <div class="footer-block__item-title">Поддержка клиентов</div>
+            <ul class="footer-block__list">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Покупателю</a></li>
+            </ul>
+            <a href="tel:+79005550129" class="footer-block__item-phone">+7 (900) 555-01-29</a>
+            <p class="footer-block__item-text">г.Москва, 111000, ул. Тестовая, д.12</p>
+            <a href="mailto:td@eetcorp.ru " class="footer-block__item-email">td@eetcorp.ru </a>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <div class="footer-box__left">
+            <p class="footer-box__left-subtitle">
+                © 2024  «Торговый дом энергоэффективные технологии»
+            </p>
+            <p class="footer-box__left-subtitle">
+                При полном или частичном использовании материалов с сайта ссылка на источник обязательна.
+            </p>
+            <div class="footer-box__left-text">
+                При полном или частичном использовании материалов с сайта ссылка на источник обязательна.
+            </div>
+            <p class="footer-box__left-text">
+                Продолжая работу с сайтом, вы даете согласие на использование сайтом cookies и на обработку персональных данных в целях функционирования сайта<br>,проведения ретаргетинга, статистических исследований, улучшения сервиса и предоставления релевантной рекламной информации на основе ваших предпочтений и интересов. 
+            </p>
+            </div>
+            <div class="footer-box__right">
+            <a href="#" class="footer-box__right-text">Политика обработки персональных данных</a>
+            <a href="#" class="footer-box__right-text">Правила продажи</a>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

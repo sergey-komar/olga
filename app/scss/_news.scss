@@ -1,0 +1,122 @@
+.news{
+    padding-top: 5rem;
+}
+.news-search {
+    margin-bottom: 5rem;
+    position: relative;
+    max-width: 88rem;
+    height: 5.2rem;
+    border: 1px solid #e0e2e3;
+    transition: all .3s ease-in;
+}
+.news-search:hover{
+    border: 1px solid rgb(52, 59, 68);
+    transition: all .3s ease-in;
+}
+.news-search::before{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    top: 14px;
+    left: 14px;
+    background: url('../images/news/news-search.svg') no-repeat;
+}
+.news-search__form-input {
+    width: 100%;
+    padding: 0 4rem;
+    line-height: 52px;
+    color: #a2a2a2;
+    border: none;
+    background-color: transparent;
+}
+.news-search__form-input::placeholder{
+    font-size: 16px;
+    color: #a2a2a2;
+}
+.news-box {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 7rem;
+}
+.news-box__link {
+    padding: 8px 16px;
+    font-size: 18px;
+    border: 1px solid #e2e0e0;
+}
+.news-box__link--active {
+    color: #fff;
+    background: #e50023;
+}
+.news-block {
+    max-width: 118rem;
+    display: flex;
+    gap: 10rem;
+}
+.news-block__img {
+    width: 40rem;
+}
+.news-block__content {
+    max-width: 60rem;
+}
+.news-block__content-title {
+    margin-bottom: 1.5rem;
+    font-size: 4.8rem;
+    font-weight: 500;
+}
+.news-block__content-text {
+    margin-bottom: 10rem;
+    font-size: 2.4rem;
+    line-height: 1.4;
+    color: #5d5d5d;
+}
+.news-block__content-btn {
+    position: relative;
+    width: 135px;
+}
+.news-block__content-btn::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url('../images/home/right-slider-catalog.svg') no-repeat;
+    right: 20px;
+    top: 15px;
+}
+.news__btn{
+    display: block;
+    width: 140px;
+    margin: 6rem auto 0 auto;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    transition: all .3s ease-in;
+}
+.news__btn:hover{
+    color: #e50023;
+    transition: all .3s ease-in;
+}
+.news__btn::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: -5px;
+    background: url('../images/news/news-down.svg') no-repeat;
+    transition: all .3s ease-in;
+}
+.news__btn:hover.news__btn::after{
+    background: url('../images/news/news-down-hover.svg') no-repeat;
+    transition: all .3s ease-in;
+}
+.news-hidden{
+    display: none;
+    padding-bottom: 0;
+}
+.news-show{
+    display: block;
+}

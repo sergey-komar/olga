@@ -1,13 +1,18 @@
 .nav-icon {
     display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 6;
-    border-radius: 50%;
+    min-width: 60px;
+    height: 60px;
     cursor: pointer;
+    background-color: #1e222a;;
 }
-
+.nav-icon.nav-icon--active{
+    background-color: transparent;
+}
 .nav-icon__middle {
     position: relative;
     width: 28px;
@@ -31,15 +36,15 @@
 .nav-icon--active .nav-icon__middle{
     background-color: rgb(63, 134, 249);
 }
- 
+
 
 .nav-icon__middle::before {
-    top: 7px;
+    top: 9px;
     transition: all .2s ease-in;
 }
 
 .nav-icon__middle::after {
-    bottom: 7px;
+    bottom: 9px;
     transition: all .2s ease-in;
 }
 
@@ -92,7 +97,7 @@
     gap: 0rem;
 }
 ul.menu__list[class]{
-    padding: 5rem 5rem 5rem 6rem;
+    padding: 5rem 2rem 5rem 6rem;
 }
 .menu__list li,
 .menu-vertical__list li{
@@ -210,6 +215,31 @@ li.menu__list-item{
 }
 
 
+
+@media(max-width:1850px){
+    ul.menu__list[class]{
+        padding: 5rem 2rem 5rem 20rem;
+    }
+    .menu__contact{
+        padding-left: 20rem;
+    }
+}
+@media(max-width:1700px){
+    ul.menu__list[class]{
+        padding: 5rem 2rem 5rem 14rem;
+    }
+    .menu__contact{
+        padding-left: 14rem;
+    }
+}
+@media(max-width:1500px){
+    ul.menu__list[class]{
+        padding: 5rem 2rem 5rem 8rem;
+    }
+    .menu__contact{
+        padding-left: 8rem;
+    }
+}
 @media(max-width:1300px){
     .menu.nav--active{
         width: 40%;

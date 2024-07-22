@@ -1,0 +1,108 @@
+.services-heading {
+    min-height: 43rem;
+    background: url('../images/services/services-bg.jpg') no-repeat;
+    background-size: cover;
+}
+.services-heading__block {
+    padding-bottom: 5rem;
+    min-height: 43rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.services-heading__block-title {
+    margin-bottom: 2rem;
+    color: #fff;
+}
+.services-heading__block-btn {
+    width: 130px;
+}
+.services {
+    padding: 10rem 0;
+}
+.services-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.services-block__content {
+    width: 50%;
+}
+.services-block__content-title,
+.services-block__box-title {
+    margin-bottom: 4rem;
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+.services-block__content-text {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 1.4;
+}
+.services-block__box {
+    padding-top: 4rem;
+}
+.services-block__list-item {
+    position: relative;
+    margin: 0 0 25px 35px;
+    font-size: 2rem;
+}
+.services-block__list-item::before{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: -3.5rem;
+    background: url('../images/services/services-check.svg') no-repeat;
+}
+.services-block__img {
+    width: 50%;
+}
+.services-icon {
+    padding: 10rem 0;
+    background: #f2f4f5;
+}
+.icon-services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.icon-services__item {
+    display: flex;
+    width: calc(100% / 2 - 5rem);
+    align-items: flex-start;
+}
+.icon-services__item-img {
+}
+.icon-services__item-text {
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+.balancing {
+    min-height: 45rem;
+    background: url('../images/services/services-balansirovka.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.balancing-box {
+    max-width: 76rem;
+    min-height: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.balancing-box__title {
+    margin-bottom: 4rem;
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: #fff;
+}
+.balancing-box__text {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    line-height: 1.4;
+    color: #fff;
+}
