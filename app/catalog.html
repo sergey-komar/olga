@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olga</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-box">
+  
+        <div class="nav-icon">
+          <div class="nav-icon__middle"></div>
+        </div>
+       
+        <div class="menu">
+          <nav class="nav">
+            <ul class="menu__list">
+              <li class="menu__list-title">Товары</li>
+              <li><a href="#">Датчики</a></li>
+              <li class="menu__list-dropdown"><a href="#">Насосное оборудование</a></li>
+              <li><a href="#">Промышленное оборудование</a></li>
+              <li><a href="#">Электродвигатели</a></li>
+              <li class="menu__list-title">Услуги</li>
+              <li><a href="#">Сервис</a></li>
+              <li><a href="#">RnD</a></li>
+              <li><a href="#">Производство</a></li>
+              <li><a href="#">Поставка</a></li>
+              <li class="menu__list-item menu__list-item--about">О компании</li>
+              <li class="menu__list-item menu__list-item--smail">Покупателю</li>
+            </ul>
+          </nav>
+          <div class="menu-vertical">
+            <img src="./images/home/menu-arrpws-left.svg" alt="img" class="menu-vertical__arrows">
+            <div class="menu-vertical__title">Все</div>
+            <ul class="menu-vertical__list">
+              <li><a href="#">Водогрейный</a></li>
+              <li><a href="#">Жаротрубный</a></li>
+              <li><a href="#">Трехходовые</a></li>
+              <li><a href="#">Водогрейный</a></li>
+              <li><a href="#">Жаротрубный</a></li>
+              <li><a href="#">Трехходовые</a></li>
+            </ul>
+          </div>
+          <div class="menu__contact">
+            <a href="tel:+79005550129" class="menu__contact-phone">+7 (900) 555-01-29</a>
+            <div class="menu__contact-address">г.Москва, 111000, ул. Тестовая, д.12</div>
+            <a href="#" class="menu__contact-email">td@eetcorp.ru </a>
+          </div>
+        </div>
+        <a href="./index.html" class="logo">
+          <img src="./images/home/logo.png" alt="img">
+        </a>
+        <div class="search">
+          <form class="search__form">
+            <input type="text" class="search__form-input" placeholder="Поиск">
+          </form>
+        </div>
+          <div class="header-box__language">
+            <a href="#" class="header-box__language-btn">RUS</a>
+            <a href="#" class="header-box__language-btn header-box__language-btn--active">EN</a>
+          </div>
+         
+            <a class="header-box__basket" href="#">
+              <img src="./images/home/shopping cart.svg" alt="img">
+              <span>1</span>
+            </a>
+       
+      </div>
+      <div class="search search-mobile">
+        <form class="search__form">
+          <input type="text" class="search__form-input" placeholder="Поиск">
+        </form>
+      </div>
+    </div>
+  </header>
+
+<main class="main">
+    <div class="breadcrums">
+        <div class="container">
+            <ul class="breadcrums__list">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+   <section class="catalog">
+    <div class="container">
+        <div class="catalog-block">
+            <aside class="aside">
+                <div class="aside-top">
+                    <div class="aside-top__title">Фильтр</div>
+                    <a href="#" class="aside-top__delete">Очистить фильтры</a>
+                </div>
+
+                <div class="aside__category">
+                    <div class="aside__category__title">Категории</div>
+                    <label class="aside-box__label">
+                        <input type="checkbox" class="aside-box__label-input">
+                        <span class="aside-box__label-checkbox"></span>
+                        <p class="aside-box__checkbox-text">
+                            Насосное оборудование
+                        </p>
+                      </label>
+                    <label class="aside-box__label">
+                        <input type="checkbox" class="aside-box__label-input">
+                        <span class="aside-box__label-checkbox"></span>
+                        <p class="aside-box__checkbox-text">
+                            Электродвигатели
+                        </p>
+                      </label>
+                    <label class="aside-box__label">
+                        <input type="checkbox" class="aside-box__label-input">
+                        <span class="aside-box__label-checkbox"></span>
+                        <p class="aside-box__checkbox-text">
+                            Комплектующие автоматизации
+                        </p>
+                      </label>
+                    <label class="aside-box__label">
+                        <input type="checkbox" class="aside-box__label-input">
+                        <span class="aside-box__label-checkbox"></span>
+                        <p class="aside-box__checkbox-text">
+                            Промышленное оборудование
+                        </p>
+                      </label>
+                    <label class="aside-box__label">
+                        <input type="checkbox" class="aside-box__label-input">
+                        <span class="aside-box__label-checkbox"></span>
+                        <p class="aside-box__checkbox-text">
+                            Котельное оборудование
+                        </p>
+                      </label>
+                </div>
+
+                <div class="aside-calculator">
+                    <div class="aside-calculator__title">Калькулятор</div>
+                    <div class="aside-calculator__top">
+                        <div class="aside-calculator__text">Мне нужен</div>
+                        <select class="aside-calculator__select">
+                            <option class="aside-calculator__option">Водогрейный</option>
+                            <option class="aside-calculator__option">Водогрейный-1</option>
+                            <option class="aside-calculator__option">Водогрейный-2</option>
+                        </select>
+                        <select class="aside-calculator__select">
+                            <option class="aside-calculator__option">Жаротрубный</option>
+                            <option class="aside-calculator__option">Жаротрубный-1</option>
+                            <option class="aside-calculator__option">Жаротрубный-2</option>
+                        </select>
+                    </div>
+                  <div class="aside-calculator__center">
+                    <div class="aside-calculator__text">Котел на</div>
+                    <select class="aside-calculator__select">
+                        <option class="aside-calculator__option">Газе</option>
+                        <option class="aside-calculator__option">Газе-1</option>
+                        <option class="aside-calculator__option">Газе-2</option>
+                    </select>
+                    <select class="aside-calculator__select">
+                        <option class="aside-calculator__option">Мазуте</option>
+                        <option class="aside-calculator__option">Мазуте-1</option>
+                        <option class="aside-calculator__option">Мазуте-2</option>
+                    </select>
+                    <select class="aside-calculator__select">
+                        <option class="aside-calculator__option">Трехходовой</option>
+                        <option class="aside-calculator__option">Трехходовой-1</option>
+                        <option class="aside-calculator__option">Трехходовой-2</option>
+                    </select>
+                   
+                  </div>
+
+                  <div class="aside-calculator__text">Мощностью</div>
+                  <select class="aside-calculator__select">
+                      <option class="aside-calculator__option">3000 кВт (кг/ч)</option>
+                      <option class="aside-calculator__option">2000 кВт (кг/ч)</option>
+                      <option class="aside-calculator__option">1000 кВт (кг/ч)</option>
+                  </select>
+                   
+                </div>
+                <div class="filter__item filter-price">
+                    <h3 class="filter__title">Цена</h3>
+                    <form action="#" class="filter-price__form">
+                      <input type="range" class="filter-price__input"
+                      type="range"
+                      min="10"                   
+                      max="90"                
+                      step="10"                   
+                      value="300"                
+                      data-orientation="vertical" >
+                      <label  class="filter-price__label">
+                       
+                         <span class="filter-price__from"></span>
+                          <span class="filter-price__to"></span>
+                      
+                      </label>
+                    </form>
+                </div>
+      
+
+                <div class="aside__brend">
+                    <div class="aside__brend-title">Бренды</div>
+                    <label class="feedback-box__label">
+                        <input type="checkbox" class="feedback-box__label-input">
+                        <span class="feedback-box__label-checkbox"></span>
+                        <p class="feedback-box__checkbox-text">
+                            Бренд 1
+                        </p>
+                    </label>
+                    <label class="feedback-box__label">
+                        <input type="checkbox" class="feedback-box__label-input">
+                        <span class="feedback-box__label-checkbox"></span>
+                        <p class="feedback-box__checkbox-text">
+                            Бренд 2
+                        </p>
+                    </label>
+                    <label class="feedback-box__label">
+                        <input type="checkbox" class="feedback-box__label-input">
+                        <span class="feedback-box__label-checkbox"></span>
+                        <p class="feedback-box__checkbox-text">
+                            Бренд 3
+                        </p>
+                    </label>
+                    <label class="feedback-box__label">
+                        <input type="checkbox" class="feedback-box__label-input">
+                        <span class="feedback-box__label-checkbox"></span>
+                        <p class="feedback-box__checkbox-text">
+                            Бренд 4
+                        </p>
+                    </label> 
+                </div>
+
+                <div class="aside__brend aside__brend-hidden">
+                    <label class="feedback-box__label">
+                        <input type="checkbox" class="feedback-box__label-input">
+                        <span class="feedback-box__label-checkbox"></span>
+                        <p class="feedback-box__checkbox-text">
+                            Бренд 5
+                        </p>
+                    </label>
+                    <label class="feedback-box__label">
+                        <input type="checkbox" class="feedback-box__label-input">
+                        <span class="feedback-box__label-checkbox"></span>
+                        <p class="feedback-box__checkbox-text">
+                            Бренд 6
+                        </p>
+                    </label>
+                    <label class="feedback-box__label">
+                        <input type="checkbox" class="feedback-box__label-input">
+                        <span class="feedback-box__label-checkbox"></span>
+                        <p class="feedback-box__checkbox-text">
+                            Бренд 7
+                        </p>
+                    </label>
+                </div>
+
+                <div class="aside__brend-btn">Показать еще</div>
+                <div class="aside__line"></div>
+               
+                <a href="#" class="aside__btn btn">Подобрать</a>
+            </aside>
+
+            <div class="catalog-product">
+                <div class="catalog-product__top">
+                    <div class="catalog-product__sort">
+                        <div class="catalog-product__sort-name">Сортировать</div>
+                        <div class="catalog-product__item">
+                            <a href="#" class="catalog-product__item-link">по цене</a>
+                            <a href="#" class="catalog-product__item-link">по названию</a>
+                            <a href="#" class="catalog-product__item-link catalog-product__item-link--active">по популярности</a>
+                            <a href="#" class="catalog-product__item-link">по рейтингу</a>
+                        </div>
+                    </div>
+                    <div class="catalog-product__top-text">Найдено товаров: 500</div>
+                </div>
+
+                <section class="product">
+                      <div class="product-catalog">
+                        <div class="product-slider__wrapper">
+                          <div class="product-slider__item">
+                            <div class="product-slider__top">
+                              <span class="product-slider__top-hot">HOT</span>
+                            </div>
+                            <img src="./images/home/product-1.png" alt="" class="product-slider__item-img">
+                            <div class="product-slider__item-title">Котёл водогрейный</div>
+                            <span class="product-slider__item-subtitle">Цена за шт.</span>
+                            <div class="product-slider__item-price">
+                              <div class="product-slider__item-price--new">23 000 р.</div>
+                              <div class="product-slider__item-price--old">50 000 р.</div>
+                            </div>
+                            <div class="product-slider__bottom">
+                              <a href="./product.html" class="product-slider__bottom-btn btn">В корзину</a>
+                              <div class="pro-qty">
+                                <a href="#" class="dec qty-btn">
+                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <input type="text" class="quantity" value="1"/>
+                                <a href="" class="inc qty-btn">
+                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.5 5V19" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-slider__wrapper">
+                          <div class="product-slider__item">
+                            <div class="product-slider__top">
+                              <span class="product-slider__top-hot">HOT</span>
+                              <span class="product-slider__top-sale">32%</span>
+                            </div>
+                            <img src="./images/home/product-1.png" alt="" class="product-slider__item-img">
+                            <div class="product-slider__item-title">Котёл водогрейный</div>
+                            <span class="product-slider__item-subtitle">Цена за шт.</span>
+                            <div class="product-slider__item-price">
+                              <div class="product-slider__item-price--new">23 000 р.</div>
+                              <div class="product-slider__item-price--old">50 000 р.</div>
+                            </div>
+                            <div class="product-slider__bottom">
+                              <a href="#" class="product-slider__bottom-btn btn">В корзину</a>
+                              <div class="pro-qty">
+                                <a href="#" class="dec qty-btn">
+                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <input type="text" class="quantity" value="1"/>
+                                <a href="" class="inc qty-btn">
+                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.5 5V19" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-slider__wrapper">
+                          <div class="product-slider__item">
+                            <div class="product-slider__top">
+                              <span class="product-slider__top-hot">HOT</span>
+                              <span class="product-slider__top-sale">32%</span>
+                            </div>
+                            <img src="./images/home/product-1.png" alt="" class="product-slider__item-img">
+                            <div class="product-slider__item-title">Котёл водогрейный</div>
+                            <span class="product-slider__item-subtitle">Цена за шт.</span>
+                            <div class="product-slider__item-price">
+                              <div class="product-slider__item-price--new">23 000 р.</div>
+                              <div class="product-slider__item-price--old">50 000 р.</div>
+                            </div>
+                            <div class="product-slider__bottom">
+                              <a href="#" class="product-slider__bottom-btn btn">В корзину</a>
+                              <div class="pro-qty">
+                                <a href="#" class="dec qty-btn">
+                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <input type="text" class="quantity" value="1"/>
+                                <a href="" class="inc qty-btn">
+                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.5 5V19" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-slider__wrapper">
+                          <div class="product-slider__item">
+                            <div class="product-slider__top">
+                              <span class="product-slider__top-hot">HOT</span>
+                              <span class="product-slider__top-sale">32%</span>
+                            </div>
+                            <img src="./images/home/product-1.png" alt="" class="product-slider__item-img">
+                            <div class="product-slider__item-title">Котёл водогрейный</div>
+                            <span class="product-slider__item-subtitle">Цена за шт.</span>
+                            <div class="product-slider__item-price">
+                              <div class="product-slider__item-price--new">23 000 р.</div>
+                              <div class="product-slider__item-price--old">50 000 р.</div>
+                            </div>
+                            <div class="product-slider__bottom">
+                              <a href="#" class="product-slider__bottom-btn btn">В корзину</a>
+                              <div class="pro-qty">
+                                <a href="#" class="dec qty-btn">
+                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <input type="text" class="quantity" value="1"/>
+                                <a href="" class="inc qty-btn">
+                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.5 5V19" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-slider__wrapper">
+                          <div class="product-slider__item">
+                            <div class="product-slider__top">
+                              <span class="product-slider__top-hot">HOT</span>
+                              <span class="product-slider__top-sale">32%</span>
+                            </div>
+                            <img src="./images/home/product-1.png" alt="" class="product-slider__item-img">
+                            <div class="product-slider__item-title">Котёл водогрейный</div>
+                            <span class="product-slider__item-subtitle">Цена за шт.</span>
+                            <div class="product-slider__item-price">
+                              <div class="product-slider__item-price--new">23 000 р.</div>
+                              <div class="product-slider__item-price--old">50 000 р.</div>
+                            </div>
+                            <div class="product-slider__bottom">
+                              <a href="#" class="product-slider__bottom-btn btn">В корзину</a>
+                              <div class="pro-qty">
+                                <a href="#" class="dec qty-btn">
+                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <input type="text" class="quantity" value="1"/>
+                                <a href="" class="inc qty-btn">
+                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.5 5V19" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-slider__wrapper">
+                          <div class="product-slider__item">
+                            <div class="product-slider__top">
+                              <span class="product-slider__top-hot">HOT</span>
+                              <span class="product-slider__top-sale">32%</span>
+                            </div>
+                            <img src="./images/home/product-1.png" alt="" class="product-slider__item-img">
+                            <div class="product-slider__item-title">Котёл водогрейный</div>
+                            <span class="product-slider__item-subtitle">Цена за шт.</span>
+                            <div class="product-slider__item-price">
+                              <div class="product-slider__item-price--new">23 000 р.</div>
+                              <div class="product-slider__item-price--old">50 000 р.</div>
+                            </div>
+                            <div class="product-slider__bottom">
+                              <a href="#" class="product-slider__bottom-btn btn">В корзину</a>
+                              <div class="pro-qty">
+                                <a href="#" class="dec qty-btn">
+                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <input type="text" class="quantity" value="1"/>
+                                <a href="" class="inc qty-btn">
+                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.5 5V19" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+            
+                      <a href="#" class="product__top-link product__top-link--mobile">В каталог</a>
+                </section>
+
+                <div class="pagination">
+                    <ul class="pagination__list">
+                        <li><a class="pagination__list--active" href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">12</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+   </section>
+    
+</main>
+
+    <footer class="footer">
+        <div class="container">
+        <div class="footer-block">
+            <div class="footer-block__item">
+                <a href="#" class="footer-block__item-logo">
+                <img src="./images/home/logo.svg" alt="img">
+                </a>
+            </div>
+            <div class="footer-block__item">
+            <div class="footer-block__item-title">Товары</div>
+            <ul class="footer-block__list">
+                <li><a href="#">Датчики</a></li>
+                <li><a href="#">Насосное оборудование</a></li>
+                <li><a href="#">Промышленное оборудование</a></li>
+                <li><a href="#">Электродвигатели</a></li>
+            </ul>
+            </div>
+            <div class="footer-block__item">
+            <div class="footer-block__item-title">Услуги</div>
+            <ul class="footer-block__list">
+                <li><a href="#">Сервис</a></li>
+                <li><a href="#">RnD</a></li>
+                <li><a href="#">Производство</a></li>
+                <li><a href="#">Поставка</a></li>
+            </ul>
+            </div>
+            <div class="footer-block__item">
+            <div class="footer-block__item-title">Поддержка клиентов</div>
+            <ul class="footer-block__list">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Покупателю</a></li>
+            </ul>
+            <a href="tel:+79005550129" class="footer-block__item-phone">+7 (900) 555-01-29</a>
+            <p class="footer-block__item-text">г.Москва, 111000, ул. Тестовая, д.12</p>
+            <a href="mailto:td@eetcorp.ru " class="footer-block__item-email">td@eetcorp.ru </a>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <div class="footer-box__left">
+            <p class="footer-box__left-subtitle">
+                © 2024  «Торговый дом энергоэффективные технологии»
+            </p>
+            <p class="footer-box__left-subtitle">
+                При полном или частичном использовании материалов с сайта ссылка на источник обязательна.
+            </p>
+            <div class="footer-box__left-text">
+                При полном или частичном использовании материалов с сайта ссылка на источник обязательна.
+            </div>
+            <p class="footer-box__left-text">
+                Продолжая работу с сайтом, вы даете согласие на использование сайтом cookies и на обработку персональных данных в целях функционирования сайта<br>,проведения ретаргетинга, статистических исследований, улучшения сервиса и предоставления релевантной рекламной информации на основе ваших предпочтений и интересов. 
+            </p>
+            </div>
+            <div class="footer-box__right">
+            <a href="#" class="footer-box__right-text">Политика обработки персональных данных</a>
+            <a href="#" class="footer-box__right-text">Правила продажи</a>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

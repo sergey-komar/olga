@@ -74,7 +74,43 @@ $(function () {
 
         $('.questions-accardion__btn').on('click', function(){
                 $(this).next().slideToggle(500); 
-             });
+        });
+
+        //product
+      $('.product-slide__thumb').slick({
+        asNavFor: '.product-slide__big',
+        focusOnSelect: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        draggable: false,
+        arrows: false,
+        
+        });
+
+        $('.product-slide__big').slick({
+                asNavFor: '.product-slide__thumb',
+                draggable: false,
+            
+        });
+
+        $(".filter-price__input").ionRangeSlider({
+                type: "double",
+                onStart: function (data){
+                  $('.filter-price__from').text(data.from);
+                  $('.filter-price__to').text(data.to);
+                },
+                onChange: function (data) {
+                $('.filter-price__from').text(data.from);
+                $('.filter-price__to').text(data.to);
+              
+              },
+              
+              });
+              
+
+
+
+
 })
 
 
@@ -133,6 +169,13 @@ window.addEventListener('DOMContentLoaded',() => {
         }
        
 
+        const asideBtn = document.querySelector('.aside__brend-btn');
+        const asideHidden = document.querySelector('.aside__brend-hidden');
+        if(asideBtn){
+                asideBtn.addEventListener('click', () => {
+                        asideHidden.classList.add('aside-show');
+                })
+                }
 
         const accardionBtn = document.querySelectorAll('.questions-accardion__btn');
                 accardionBtn.forEach(item => {
@@ -141,6 +184,46 @@ window.addEventListener('DOMContentLoaded',() => {
                 });
         });
 
+        const tabsItem = document.querySelector('.tabs__top');
+        const tabsItemBtn = document.querySelectorAll('.tabs__item-btn');
+        const tabsContent = document.querySelectorAll('.tabs__content');
+
+        function tabsHide(){
+        tabsContent.forEach(item => {
+        item.classList.add('hide');
+        item.classList.remove('show');
+        });
+
+        tabsItemBtn.forEach(btn =>{
+        btn.classList.remove('active-tabs');
+        })
+        }
+        function tabsShow(i){
+        tabsContent[i].classList.add('show');
+        tabsContent[i].classList.remove('hide');
+        tabsItemBtn[i].classList.add('active-tabs');
+        }
+
+        if(tabsItemBtn && tabsItem && tabsContent){
+        tabsItem.addEventListener('click', (e)=>{
+        const target = e.target;
+
+        if(target && target.classList.contains('tabs__item-btn')){
+        tabsItemBtn.forEach((item, i)=>{
+                if(target == item){
+                tabsHide();
+                tabsShow(i);
+                }
+                
+        })
+
+        }
+        })
+
+        tabsHide();
+        tabsShow(0);
+
+}
 
 
 })
