@@ -29,7 +29,7 @@ $(function () {
                 breakpoint: 576,
                 settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1,
+                        slidesToScroll: 1
                 },
                 },
                
@@ -90,8 +90,23 @@ $(function () {
         $('.product-slide__big').slick({
                 asNavFor: '.product-slide__thumb',
                 draggable: false,
+                responsive: [
+                        {
+                          breakpoint: 650,
+                          settings: {
+                               arrows: false,
+                               dots: true
+                          },
+                        },
+                       
+                       
+                      ],
+                
             
         });
+
+
+
 
         $(".filter-price__input").ionRangeSlider({
                 type: "double",
@@ -121,14 +136,13 @@ window.addEventListener('DOMContentLoaded',() => {
         const itemDropdown = document.querySelector('.menu__list-dropdown');
         const menuVertical = document.querySelector('.menu-vertical');
         const verticalArrows = document.querySelector('.menu-vertical__arrows');
-        // const test = calcScroll();
+       
       
         mobile.addEventListener("click", function () {
          document.body.classList.toggle('mobile-class');
           this.classList.toggle("nav-icon--active");
           menu.classList.toggle("nav--active");
           document.body.classList.toggle('overflow');
-        //   document.body.style.marginRight = `${test}px`;
         document.body.classList.toggle('w');
         });
        
@@ -144,21 +158,6 @@ window.addEventListener('DOMContentLoaded',() => {
         })
 
 
-        // function calcScroll(){
-        // let div = document.createElement('div');
-        // div.style.width = '50px';
-        // div.style.height = '50px';
-        // div.style.overflowY = 'scroll';
-        // div.style.visibility = 'hidden';
-        
-        // document.body.append(div);
-
-        // let scrollWidth = div.offsetWidth - div.clientWidth;
-        
-        // div.remove();
-        
-        // return scrollWidth;
-        // }
 
         const newsHidden = document.querySelector('.news-hidden');
         const newsBtn = document.querySelector('.news__btn');
@@ -223,7 +222,14 @@ window.addEventListener('DOMContentLoaded',() => {
         tabsHide();
         tabsShow(0);
 
-}
+        }
+
+        const searchBtn = document.querySelector('.search__wrapper-filter');
+        const aside = document.querySelector('.aside');
+
+        searchBtn.addEventListener('click', ()  => {
+                aside.classList.toggle('aside-show');
+        })
 
 
 })

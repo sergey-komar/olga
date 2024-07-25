@@ -25,6 +25,9 @@
     align-items: center;
     gap: 20px;
 }
+.services-block.services-block--services{
+    flex-wrap: nowrap;
+}
 .services-block__content {
     width: 50%;
 }
@@ -74,8 +77,6 @@
     display: flex;
     width: calc(100% / 2 - 5rem);
     align-items: flex-start;
-}
-.icon-services__item-img {
 }
 .icon-services__item-text {
     margin-left: 1rem;

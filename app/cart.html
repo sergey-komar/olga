@@ -80,162 +80,168 @@
     </div>
   </header>
 
-<main class="main">
-    <div class="breadcrums">
-        <div class="container">
-            <ul class="breadcrums__list">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Корзина</a></li>
+    <main class="main">
+        <div class="breadcrums">
+            <div class="container">
+                <ul class="breadcrums__list">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Корзина</a></li>
 
-            </ul>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <section class="cart">
-        <div class="container">
-            <div class="cart-block">
-                <div class="cart-product">
-                    <div class="cart-product__top">
-                        <a hreh="#" class="cart-product__top-link">Назад</a>
-                        <a href="#" class="cart-product__top-delete">Очистить корзину</a>
-                    </div>
-                    <div class="cart-product__title title">Корзина</div>
-                    <div class="cart-product__box">
-                        <label class="feedback-box__label">
-                            <input type="checkbox" class="feedback-box__label-input">
-                            <span class="feedback-box__label-checkbox"></span>
-                            <p class="feedback-box__checkbox-text">
-                                Выбрать все
-                            </p>
-                        </label>
-                        <a href="#" class="cart-product__box-link">Удалить выбранное (2)</a>
-                    </div>
-                    <div class="cart-product__line">
-                        <div class="cart-product__line-number">01</div>
-                    </div>
-
-                    <div class="cart-product__item">
-                        <div class="cart-product__left">
+        <section class="cart">
+            <div class="container">
+                <div class="cart-block">
+                    <div class="cart-product">
+                        <div class="cart-product__top">
+                            <a hreh="#" class="cart-product__top-link">Назад</a>
+                            <a href="#" class="cart-product__top-delete">Очистить корзину</a>
+                        </div>
+                        <div class="cart-product__title title">Корзина</div>
+                        <div class="cart-product__box">
                             <label class="feedback-box__label">
                                 <input type="checkbox" class="feedback-box__label-input">
                                 <span class="feedback-box__label-checkbox"></span>
+                                <p class="feedback-box__checkbox-text">
+                                    Выбрать все
+                                </p>
                             </label>
-                            <img src="./images/cart/cart-img.png" alt="img" class="cart-product__left-img">
+                            <a href="#" class="cart-product__box-link">Удалить выбранное (2)</a>
                         </div>
-                        <div class="cart-product__center">
-                            <div class="cart-product__info">
-                                <div class="cart-product__info-item">
-                                    <span>Артикул:</span>
-                                    <strong>А264671</strong>
+                        <div class="cart-product__line">
+                            <div class="cart-product__line-number">01</div>
+                        </div>
+
+                        <div class="cart-product__item">
+                            <div class="cart-product__inner">
+                                <div class="cart-product__left">
+                                    <label class="feedback-box__label">
+                                        <input type="checkbox" class="feedback-box__label-input">
+                                        <span class="feedback-box__label-checkbox"></span>
+                                    </label>
+                                    <img src="./images/cart/cart-img.png" alt="img" class="cart-product__left-img">
                                 </div>
-                                <div class="cart-product__info-item">
-                                    <span>Наличие:</span>
-                                    <p>На складе</p>
+                                <div class="cart-product__center">
+                                    <div class="cart-product__info">
+                                        <div class="cart-product__info-item">
+                                            <span>Артикул:</span>
+                                            <strong>А264671</strong>
+                                        </div>
+                                        <div class="cart-product__info-item">
+                                            <span>Наличие:</span>
+                                            <p>На складе</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-product__center-title">
+                                        Котел водогрейный Котел водогрейный  
+                                    </div>
+                                    <a href="#" class="cart-product__center-delete">Удалить</a>
                                 </div>
                             </div>
-                            <div class="cart-product__center-title">
-                                Котел водогрейный Котел водогрейный  
+                            
+                            <div class="cart-product__right">
+                                <div class="pro-qty">
+                                    <a href="#" class="dec qty-btn">
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <input type="text" class="quantity" value="1"/>
+                                    <a href="" class="inc qty-btn">
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5 5V19" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="cart-product__right-price">23 000 р.</div>
                             </div>
-                            <a href="#" class="cart-product__center-delete">Удалить</a>
                         </div>
-                        <div class="cart-product__right">
-                            <div class="pro-qty">
-                                <a href="#" class="dec qty-btn">
-                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                                <input type="text" class="quantity" value="1"/>
-                                <a href="" class="inc qty-btn">
-                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.5 5V19" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
+
+                        <div class="cart-product__line">
+                            <div class="cart-product__line-number">02</div>
+                        </div>
+                        <div class="cart-product__item">
+                            <div class="cart-product__inner">
+                                <div class="cart-product__left">
+                                    <label class="feedback-box__label">
+                                        <input type="checkbox" class="feedback-box__label-input">
+                                        <span class="feedback-box__label-checkbox"></span>
+                                    </label>
+                                    <img src="./images/cart/cart-img.png" alt="img" class="cart-product__left-img">
+                                </div>
+                                <div class="cart-product__center">
+                                    <div class="cart-product__info">
+                                        <div class="cart-product__info-item">
+                                            <span>Артикул:</span>
+                                            <strong>А264671</strong>
+                                        </div>
+                                        <div class="cart-product__info-item">
+                                            <span>Наличие:</span>
+                                            <p>На складе</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-product__center-title">
+                                        Котел водогрейный Котел водогрейный  
+                                    </div>
+                                    <a href="#" class="cart-product__center-delete">Удалить</a>
+                                </div>
                             </div>
-                            <div class="cart-product__right-price">23 000 р.</div>
+                            
+                            <div class="cart-product__right">
+                                <div class="pro-qty">
+                                    <a href="#" class="dec qty-btn">
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <input type="text" class="quantity" value="1"/>
+                                    <a href="" class="inc qty-btn">
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5 5V19" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="cart-product__right-price">23 000 р.</div>
+                            </div>
                         </div>
+                        
                     </div>
 
-                    <div class="cart-product__line">
-                        <div class="cart-product__line-number">02</div>
-                    </div>
-                    <div class="cart-product__item">
-                        <div class="cart-product__left">
-                            <label class="feedback-box__label">
-                                <input type="checkbox" class="feedback-box__label-input">
-                                <span class="feedback-box__label-checkbox"></span>
-                            </label>
-                            <img src="./images/cart/cart-img.png" alt="img" class="cart-product__left-img">
-                        </div>
-                        <div class="cart-product__center">
-                            <div class="cart-product__info">
-                                <div class="cart-product__info-item">
-                                    <span>Артикул:</span>
-                                    <strong>А264671</strong>
-                                </div>
-                                <div class="cart-product__info-item">
-                                    <span>Наличие:</span>
-                                    <p>На складе</p>
-                                </div>
+                    <div class="cart-total__wrapper">
+                        <div class="cart-total">
+                            <div class="cart-total__title">Итого</div>
+                            <div class="cart-total__item">
+                                <span>три товара</span>
+                                <p>69 000 р.</p>
                             </div>
-                            <div class="cart-product__center-title">
-                                Котел водогрейный Котел водогрейный  
+                            <div class="cart-total__item">
+                                <span>доставка</span>
+                                <p>10 000 р.</p>
                             </div>
-                            <a href="#" class="cart-product__center-delete">Удалить</a>
-                        </div>
-                        <div class="cart-product__right">
-                            <div class="pro-qty">
-                                <a href="#" class="dec qty-btn">
-                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                                <input type="text" class="quantity" value="1"/>
-                                <a href="" class="inc qty-btn">
-                                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.5 5V19" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M5.5 12H19.5" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
+                            <div class="cart-total__item">
+                                <span>скидка</span>
+                                <p>1 000 р.</p>
                             </div>
-                            <div class="cart-product__right-price">23 000 р.</div>
+        
+                            <div class="cart-total__line"></div>
+                            <div class="cart-total__box">
+                                <p class="cart-total__box-text">Всего:</p>
+                                <div class="cart-total__box-price">78 000 р.</div>
+                            </div>
+                            <a href="#" class="cart-total__btn btn">Оформить заказ</a>
                         </div>
                     </div>
                     
                 </div>
-
-                <div class="cart-total__wrapper">
-                    <div class="cart-total">
-                        <div class="cart-total__title">Итого</div>
-                        <div class="cart-total__item">
-                            <span>три товара</span>
-                            <p>69 000 р.</p>
-                        </div>
-                        <div class="cart-total__item">
-                            <span>доставка</span>
-                            <p>10 000 р.</p>
-                        </div>
-                        <div class="cart-total__item">
-                            <span>скидка</span>
-                            <p>1 000 р.</p>
-                        </div>
-    
-                        <div class="cart-total__line"></div>
-                        <div class="cart-total__box">
-                            <p class="cart-total__box-text">Всего:</p>
-                            <div class="cart-total__box-price">78 000 р.</div>
-                        </div>
-                        <a href="#" class="cart-total__btn btn">Оформить заказ</a>
-                    </div>
-                </div>
-                
+            
             </div>
-           
-        </div>
-    </section>
-    
-</main>
+        </section>
+        
+    </main>
 
     <footer class="footer">
         <div class="container">

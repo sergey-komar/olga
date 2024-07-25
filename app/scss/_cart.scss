@@ -116,8 +116,13 @@
     display: flex;
     margin-bottom: 7rem;
 }
+.cart-product__inner{
+    display: flex;
+    width: 70%;
+    gap: 20px;
+}
 .cart-product__left {
-    width: 20%;
+    min-width: 20%;
     display: flex;
     gap: 4rem;
     align-items: center;
@@ -130,7 +135,7 @@
     height: 60px;
 }
 .cart-product__center {
-    width: 50%;
+    width: 80%;
 }
 .cart-product__info {
     margin-bottom: 10px;
