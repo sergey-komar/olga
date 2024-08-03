@@ -14,6 +14,9 @@ body {
 html{
 	font-size: 10px;
 }
+html {
+	overflow-y: scroll;
+  }
 body > * {
 	flex-shrink: 0;
 	/*sticky footer*/
@@ -28,6 +31,7 @@ button{
 .overflow{
 	overflow: hidden;
 }
+
 .container{
 	max-width: 156rem;
 	margin: 0 auto;
@@ -54,6 +58,7 @@ button{
 }
 .btn:hover{
 	background: rgb(179, 0, 0);
+	transition: all .3s ease-in;
 }
 input{
 	cursor: pointer;

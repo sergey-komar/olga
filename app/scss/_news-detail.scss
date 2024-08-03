@@ -13,7 +13,9 @@
 .news-detail__link:hover{
     color: #e50023;
     transition: all .3s ease-in;
+    
 }
+
 .news-detail__link::before{
     position: absolute;
     content: '';

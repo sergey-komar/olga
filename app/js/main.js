@@ -123,7 +123,11 @@ $(function () {
               });
               
 
-
+        //      ЗАМЕНА ТЕКСТА ПРИ КЛИКЕ В КНОПКЕ
+              $('.aside__brend-btn').click(function()
+              {
+                $('strong').toggle();
+              });
 
 
 })
@@ -158,7 +162,7 @@ window.addEventListener('DOMContentLoaded',() => {
         })
 
 
-
+        //Кнопка показать ещё в новостях
         const newsHidden = document.querySelector('.news-hidden');
         const newsBtn = document.querySelector('.news__btn');
         if(newsBtn){
@@ -168,14 +172,17 @@ window.addEventListener('DOMContentLoaded',() => {
         }
        
 
+        //Кнопка показать ещё в сайдбаре
         const asideBtn = document.querySelector('.aside__brend-btn');
         const asideHidden = document.querySelector('.aside__brend-hidden');
         if(asideBtn){
-                asideBtn.addEventListener('click', () => {
-                        asideHidden.classList.add('aside-show');
+        asideBtn.addEventListener('click', () => {
+                asideHidden.classList.toggle('aside-show');
+                asideBtn.classList.toggle('open-arrow');
                 })
-                }
+        }
 
+        // добавление класса в кнопке в ваккардеоне
         const accardionBtn = document.querySelectorAll('.questions-accardion__btn');
                 accardionBtn.forEach(item => {
                 item.addEventListener('click', () => {
@@ -183,6 +190,7 @@ window.addEventListener('DOMContentLoaded',() => {
                 });
         });
 
+        //табы
         const tabsItem = document.querySelector('.tabs__top');
         const tabsItemBtn = document.querySelectorAll('.tabs__item-btn');
         const tabsContent = document.querySelectorAll('.tabs__content');
@@ -224,6 +232,7 @@ window.addEventListener('DOMContentLoaded',() => {
 
         }
 
+        //кнопка фильтр
         const searchBtn = document.querySelector('.search__wrapper-filter');
         const aside = document.querySelector('.aside');
 

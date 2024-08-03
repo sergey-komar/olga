@@ -103,7 +103,9 @@
 .pro-qty--product{
     margin-bottom: 2.5rem;
 }
-
+.cart-product__info-item--mobile{
+    display: none;
+}
 .cart-product__info-item {
     gap: 5px;
 }
