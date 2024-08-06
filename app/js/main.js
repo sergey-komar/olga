@@ -76,6 +76,26 @@ $(function () {
                 $(this).next().slideToggle(500); 
         });
 
+        $('.questions-accardion__btn--one').on('click', function(){
+                $(this).next().slideToggle(500); 
+        });
+        $('.questions-accardion__btn--two').on('click', function(){
+                $(this).next().slideToggle(500); 
+        });
+        $('.questions-accardion__btn--three').on('click', function(){
+                $(this).next().slideToggle(500); 
+        });
+        $('.questions-accardion__btn--four').on('click', function(){
+                $(this).next().slideToggle(500); 
+        });
+        $('.questions-accardion__btn--fife').on('click', function(){
+                $(this).next().slideToggle(500); 
+        });
+        $('.questions-accardion__btn--six').on('click', function(){
+                $(this).next().slideToggle(500); 
+        });
+
+
         //product
       $('.product-slide__thumb').slick({
         asNavFor: '.product-slide__big',
@@ -240,5 +260,49 @@ window.addEventListener('DOMContentLoaded',() => {
                 aside.classList.toggle('aside-show');
         })
 
+
+        const btnOne = document.querySelectorAll('.questions-accardion__btn--one');
+              
+                btnOne.forEach(item => {
+                item.addEventListener('click', () => {
+                        item.classList.toggle('open-one')
+                });
+        });
+        const btnTwo = document.querySelectorAll('.questions-accardion__btn--two');
+              
+                btnTwo.forEach(item => {
+                item.addEventListener('click', () => {
+                        item.classList.toggle('open-two')
+                });
+        });
+        const btnThree = document.querySelectorAll('.questions-accardion__btn--three');
+              
+                btnThree.forEach(item => {
+                item.addEventListener('click', () => {
+                        item.classList.toggle('open-three')
+                });
+        });
+        const btnFour = document.querySelectorAll('.questions-accardion__btn--four');
+              
+                btnFour.forEach(item => {
+                item.addEventListener('click', () => {
+                        item.classList.toggle('open-four')
+                });
+        });
+        const btnFife = document.querySelectorAll('.questions-accardion__btn--fife');
+              
+                btnFife.forEach(item => {
+                item.addEventListener('click', () => {
+                        item.classList.toggle('open-fife')
+                });
+        });
+        const btnSix = document.querySelectorAll('.questions-accardion__btn--six');
+              
+                btnSix.forEach(item => {
+                item.addEventListener('click', () => {
+                        item.classList.toggle('open-six')
+                });
+        });
+                
 
 })

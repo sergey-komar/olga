@@ -458,3 +458,95 @@ ul[class].search__list {
 }
 
 
+
+
+
+
+.questions-accardion--one,
+.questions-accardion--two,
+.questions-accardion--three,
+.questions-accardion--four,
+.questions-accardion--fife,
+.questions-accardion--six{
+    border: 1px solid #343b44;
+}
+.questions-accardion__content--one,
+.questions-accardion__content--two,
+.questions-accardion__content--three,
+.questions-accardion__content--four,
+.questions-accardion__content--fife,
+.questions-accardion__content--six{
+    display: none;
+}
+.questions-accardion__box-link--one,
+.questions-accardion__box-link--two,
+.questions-accardion__box-link--three,
+.questions-accardion__box-link--four,
+.questions-accardion__box-link--fife,
+.questions-accardion__box-link--six{
+    display: block;
+    padding-bottom: 10px;
+}
+.questions-accardion__content--one,
+.questions-accardion__content--two,
+.questions-accardion__content--three,
+.questions-accardion__content--four,
+.questions-accardion__content--fife,
+.questions-accardion__content--six{
+    width: 100%;
+    padding-left: 1.5rem;
+}
+.questions-accardion__title--one,
+.questions-accardion__title--two,
+.questions-accardion__title--three,
+.questions-accardion__title--four,
+.questions-accardion__title--fife,
+.questions-accardion__title--six{
+    padding-left: 1.5rem;
+    width: 100%;
+    display: block;
+    height: inherit;
+    line-height: 50px;
+}
+.questions-accardion__btn--one,
+.questions-accardion__btn--two,
+.questions-accardion__btn--three,
+.questions-accardion__btn--four,
+.questions-accardion__btn--fife,
+.questions-accardion__btn--six{
+    position: relative;
+    display: block;
+    height: 5rem;
+    cursor: pointer; 
+}
+.questions-accardion__btn--one::after,
+.questions-accardion__btn--two::after,
+.questions-accardion__btn--three::after,
+.questions-accardion__btn--four::after,
+.questions-accardion__btn--fife::after,
+.questions-accardion__btn--six::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    right: 7px;
+    top: 20px;
+    background: url('../images/product/select-arrow.svg') no-repeat;
+    transition: all .3s ease-in;
+}
+.questions-accardion__btn--one.open-one.questions-accardion__btn--one::after,
+.questions-accardion__btn--two.open-two.questions-accardion__btn--two::after,
+.questions-accardion__btn--three.open-three.questions-accardion__btn--three::after,
+.questions-accardion__btn--four.open-four.questions-accardion__btn--four::after,
+.questions-accardion__btn--fife.open-fife.questions-accardion__btn--fife::after,
+.questions-accardion__btn--six.open-six.questions-accardion__btn--six::after{
+    transform: rotate(180deg);
+    top: 7px;
+    transition: all .3s ease-in;
+}
+.questions-accardion--two,
+.questions-accardion--three,
+.questions-accardion--fife{
+    margin-bottom: 10px;
+}
+
